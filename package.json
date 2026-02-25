@@ -1,0 +1,12 @@
+{
+  "name": "iot-projectforge",
+  "version": "1.0.0",
+  "description": "B.Tech Final Year Projects website",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

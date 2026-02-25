@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProjectForge — B.Tech Final Year Projects</title>
+  <meta name="description" content="Professional B.Tech project development — IoT, AI, Web, Embedded, ML & Final Year Projects for CSE, ECE, EEE, IT students." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Lenis -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Project<span>Forge</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact" class="nav-cta">Get Started</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-parallax-layer hero-layer-1" aria-hidden="true"></div>
+    <div class="hero-parallax-layer hero-layer-2" aria-hidden="true"></div>
+    <div class="hero-parallax-layer hero-layer-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Final Year Project Specialists
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-line" data-animate>We Build B.Tech</span>
+        <span class="hero-line hero-accent" data-animate>Projects That Help</span>
+        <span class="hero-line" data-animate>You Graduate &amp; Innovate</span>
+      </h1>
+      <p class="hero-sub" data-animate>IoT · AI · Web · Embedded · Final Year Projects</p>
+      <div class="hero-actions" data-animate>
+        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+        <a href="#portfolio" class="btn btn-ghost">View Portfolio</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+    <!-- Grid overlay -->
+    <div class="hero-grid" aria-hidden="true"></div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card" data-stat>
+          <div class="stat-number"><span class="counter" data-target="500">0</span>+</div>
+          <div class="stat-label">Projects Delivered</div>
+          <div class="stat-bar"><div class="stat-bar-fill" data-fill="92"></div></div>
+        </div>
+        <div class="stat-card" data-stat>
+          <div class="stat-number"><span class="counter" data-target="8">0</span></div>
+          <div class="stat-label">Tech Domains</div>
+          <div class="stat-bar"><div class="stat-bar-fill" data-fill="78"></div></div>
+        </div>
+        <div class="stat-card" data-stat>
+          <div class="stat-number"><span class="counter" data-target="98">0</span>%</div>
+          <div class="stat-label">Success Rate</div>
+          <div class="stat-bar"><div class="stat-bar-fill" data-fill="98"></div></div>
+        </div>
+        <div class="stat-card" data-stat>
+          <div class="stat-number"><span class="counter" data-target="4">0</span> yrs</div>
+          <div class="stat-label">Experience</div>
+          <div class="stat-bar"><div class="stat-bar-fill" data-fill="85"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-stack">
+            <div class="acard acard-1">
+              <div class="acard-icon">⚡</div>
+              <div class="acard-text">Rapid Delivery</div>
+            </div>
+            <div class="acard acard-2">
+              <div class="acard-icon">🎓</div>
+              <div class="acard-text">100% Original</div>
+            </div>
+            <div class="acard acard-3">
+              <div class="acard-icon">🛡️</div>
+              <div class="acard-text">Viva Support</div>
+            </div>
+          </div>
+          <!-- SVG decorative lines -->
+          <svg class="about-svg" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="svg-draw" d="M 30 150 Q 80 50 150 80 Q 220 110 270 50" stroke="#00A4C7" stroke-width="1.5" stroke-linecap="round"/>
+            <path class="svg-draw" d="M 30 200 Q 100 160 180 190 Q 240 210 270 170" stroke="#6B8699" stroke-width="1" stroke-linecap="round"/>
+            <circle cx="150" cy="150" r="60" stroke="#C6DDE8" stroke-width="0.5" stroke-dasharray="4 6"/>
+          </svg>
+        </div>
+        <div class="about-content">
+          <div class="section-tag">About Us</div>
+          <h2 class="section-title">Engineering Excellence for<br/><em>Every Student</em></h2>
+          <p class="about-text">We are a specialized team of engineers and developers who have helped hundreds of B.Tech students across CSE, ECE, EEE, IT, AI, IoT and Embedded Systems domains turn their final-year project ideas into fully working, documented solutions.</p>
+          <p class="about-text">Our approach combines technical precision with academic requirements — giving you projects that impress evaluators and actually work.</p>
+          <ul class="about-features">
+            <li><span class="feature-dot"></span>Full hardware + software integration</li>
+            <li><span class="feature-dot"></span>IEEE standard documentation</li>
+            <li><span class="feature-dot"></span>Viva preparation &amp; presentation support</li>
+            <li><span class="feature-dot"></span>Post-delivery troubleshooting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What We Build</div>
+        <h2 class="section-title">Services &amp; Domains</h2>
+        <p class="section-desc">From microcontroller-level firmware to cloud-connected AI dashboards — we cover the full spectrum of B.Tech project domains.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-service>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M14 20h12M20 14v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>IoT Systems</h3>
+          <p>Smart home, industrial monitoring, agriculture automation using ESP32, Arduino, MQTT, cloud integration.</p>
+          <div class="service-tag">Embedded + Cloud</div>
+        </div>
+        <div class="service-card" data-service>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="4" y="8" width="32" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 20l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>AI &amp; Machine Learning</h3>
+          <p>Image recognition, NLP, predictive models, recommendation systems using Python, TensorFlow, scikit-learn.</p>
+          <div class="service-tag">Python + Deep Learning</div>
+        </div>
+        <div class="service-card" data-service>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M8 12h24M8 20h18M8 28h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Full-stack web applications with React, Node.js, databases, REST APIs and cloud deployment.</p>
+          <div class="service-tag">Frontend + Backend</div>
+        </div>
+        <div class="service-card" data-service>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="10" y="6" width="20" height="28" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="30" r="2" stroke="currentColor" stroke-width="1"/></svg>
+          </div>
+          <h3>Embedded Systems</h3>
+          <p>RTOS, STM32, Raspberry Pi, sensor integration, motor control, PCB design and firmware development.</p>
+          <div class="service-tag">Hardware + Firmware</div>
+        </div>
+        <div class="service-card" data-service>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="14" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M8 34c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Computer Vision</h3>
+          <p>Face detection, object tracking, OCR, gesture recognition systems using OpenCV and YOLO.</p>
+          <div class="service-tag">OpenCV + YOLO</div>
+        </div>
+        <div class="service-card" data-service>
+          <div class="service-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 6v28M6 20h28M12 12l16 16M28 12L12 28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".5"/><circle cx="20" cy="20" r="5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3>Networking &amp; Security</h3>
+          <p>Network simulation, cybersecurity tools, packet analysis, IDS/IPS systems using NS3 and Python.</p>
+          <div class="service-tag">NS3 + Python</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Recent Work</div>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+        <button class="filter-btn" data-filter="ai">AI/ML</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="embedded">Embedded</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item" data-category="iot" data-portfolio>
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #273A48 0%, #00A4C7 100%);">
+            <div class="portfolio-pattern">
+              <svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="80" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><circle cx="100" cy="100" r="50" stroke="rgba(255,255,255,0.15)" stroke-width="1"/><circle cx="100" cy="100" r="20" fill="rgba(0,164,199,0.3)"/><path d="M60 100 h80 M100 60 v80" stroke="rgba(255,255,255,0.2)" stroke-width="1"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-cat">IoT · ESP32</div>
+            <h3>Smart Agricultural Monitoring</h3>
+            <p>Soil moisture, temperature & humidity monitoring with mobile alerts</p>
+            <a href="#contact" class="btn-small">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="ai" data-portfolio>
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #3A4C59 0%, #273A48 100%);">
+            <div class="portfolio-pattern">
+              <svg viewBox="0 0 200 200" fill="none"><rect x="40" y="60" width="120" height="80" rx="8" stroke="rgba(0,164,199,0.4)" stroke-width="1.5"/><path d="M70 100 l20 20 40-40" stroke="rgba(0,164,199,0.6)" stroke-width="2" stroke-linecap="round"/><circle cx="100" cy="40" r="12" fill="rgba(0,164,199,0.2)" stroke="rgba(0,164,199,0.5)" stroke-width="1"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-cat">AI · Python</div>
+            <h3>Face Attendance System</h3>
+            <p>Real-time facial recognition attendance with 97% accuracy and admin dashboard</p>
+            <a href="#contact" class="btn-small">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="web" data-portfolio>
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #1a2e3a 0%, #3A4C59 100%);">
+            <div class="portfolio-pattern">
+              <svg viewBox="0 0 200 200" fill="none"><rect x="30" y="50" width="140" height="100" rx="6" stroke="rgba(198,221,232,0.2)" stroke-width="1"/><rect x="30" y="50" width="140" height="20" rx="6" fill="rgba(0,164,199,0.15)"/><path d="M50 100h100M50 120h70" stroke="rgba(198,221,232,0.2)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-cat">Web · React</div>
+            <h3>E-Voting Platform</h3>
+            <p>Secure blockchain-based student election system with real-time results</p>
+            <a href="#contact" class="btn-small">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="embedded" data-portfolio>
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #273A48 0%, #1a2a35 100%);">
+            <div class="portfolio-pattern">
+              <svg viewBox="0 0 200 200" fill="none"><rect x="60" y="60" width="80" height="80" rx="4" stroke="rgba(0,164,199,0.4)" stroke-width="1.5"/><circle cx="100" cy="100" r="20" stroke="rgba(0,164,199,0.6)" stroke-width="1.5" fill="rgba(0,164,199,0.1)"/><path d="M60 80 l-20 0 M60 100 l-20 0 M60 120 l-20 0 M140 80 l20 0 M140 100 l20 0 M140 120 l20 0 M80 60 l0-20 M100 60 l0-20 M120 60 l0-20 M80 140 l0 20 M100 140 l0 20 M120 140 l0 20" stroke="rgba(198,221,232,0.3)" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-cat">Embedded · STM32</div>
+            <h3>Autonomous Line Follower</h3>
+            <p>PID-controlled robot with obstacle detection and path optimization</p>
+            <a href="#contact" class="btn-small">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="ai" data-portfolio>
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #273A48 60%, #00A4C7 100%);">
+            <div class="portfolio-pattern">
+              <svg viewBox="0 0 200 200" fill="none"><path d="M40 160 Q80 60 120 100 Q160 140 180 60" stroke="rgba(0,164,199,0.6)" stroke-width="2" fill="none"/><circle cx="80" cy="100" r="6" fill="rgba(0,164,199,0.8)"/><circle cx="130" cy="110" r="6" fill="rgba(0,164,199,0.8)"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-cat">ML · Python</div>
+            <h3>Crop Disease Predictor</h3>
+            <p>CNN-based plant disease detection with 94% accuracy using leaf images</p>
+            <a href="#contact" class="btn-small">View Details</a>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-category="iot" data-portfolio>
+          <div class="portfolio-img" style="background: linear-gradient(135deg, #3A4C59 0%, #273A48 100%);">
+            <div class="portfolio-pattern">
+              <svg viewBox="0 0 200 200" fill="none"><path d="M100 40 C60 40 30 70 30 110 C30 150 60 170 100 170 C140 170 170 150 170 110 C170 70 140 40 100 40Z" stroke="rgba(0,164,199,0.3)" stroke-width="1.5" fill="none"/><path d="M100 70 C80 70 65 85 65 105 C65 125 80 135 100 135" stroke="rgba(0,164,199,0.5)" stroke-width="1.5" fill="none"/><circle cx="100" cy="105" r="12" fill="rgba(0,164,199,0.3)" stroke="rgba(0,164,199,0.7)" stroke-width="1.5"/></svg>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-cat">IoT · Arduino</div>
+            <h3>Home Automation Hub</h3>
+            <p>Voice + app controlled smart home with energy monitoring dashboard</p>
+            <a href="#contact" class="btn-small">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">How We Work</div>
+        <h2 class="section-title">From Idea to Submission</h2>
+      </div>
+
+      <div class="process-timeline">
+        <div class="process-svg-line">
+          <svg viewBox="0 0 1000 80" preserveAspectRatio="none" fill="none">
+            <path class="process-path" d="M 0 40 Q 200 10 400 40 Q 600 70 800 40 Q 900 25 1000 40" stroke="#00A4C7" stroke-width="1.5"/>
+          </svg>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step" data-step="1">
+            <div class="step-num">01</div>
+            <div class="step-dot"><span></span></div>
+            <div class="step-content">
+              <h4>Consultation</h4>
+              <p>Share your project idea and requirements. We'll guide you toward the best approach.</p>
+            </div>
+          </div>
+          <div class="process-step" data-step="2">
+            <div class="step-num">02</div>
+            <div class="step-dot"><span></span></div>
+            <div class="step-content">
+              <h4>Proposal</h4>
+              <p>Receive a detailed scope, timeline, and pricing customized to your domain.</p>
+            </div>
+          </div>
+          <div class="process-step" data-step="3">
+            <div class="step-num">03</div>
+            <div class="step-dot"><span></span></div>
+            <div class="step-content">
+              <h4>Development</h4>
+              <p>We build with progress updates — hardware, software, integration and testing.</p>
+            </div>
+          </div>
+          <div class="process-step" data-step="4">
+            <div class="step-num">04</div>
+            <div class="step-dot"><span></span></div>
+            <div class="step-content">
+              <h4>Documentation</h4>
+              <p>IEEE-format report, PPT, circuit diagrams and full viva preparation kit.</p>
+            </div>
+          </div>
+          <div class="process-step" data-step="5">
+            <div class="step-num">05</div>
+            <div class="step-dot"><span></span></div>
+            <div class="step-content">
+              <h4>Delivery</h4>
+              <p>Final handoff with demo walkthrough and 30-day post-delivery support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-tag">Get In Touch</div>
+          <h2 class="section-title">Need a B.Tech Project?<br/><em>Contact Us</em></h2>
+          <p class="contact-desc">Tell us your domain, year, and deadline — we'll take care of the rest. Fast, reliable, and academically sound.</p>
+
+          <div class="contact-channels">
+            <a href="https://wa.me/91XXXXXXXXXX" class="channel-item">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <div class="channel-label">WhatsApp</div>
+                <div class="channel-value">+91 XXXXX XXXXX</div>
+              </div>
+            </a>
+            <a href="mailto:hello@projectforge.in" class="channel-item">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 4l10 9 10-9"/></svg>
+              </div>
+              <div>
+                <div class="channel-label">Email</div>
+                <div class="channel-value">hello@projectforge.in</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="domain">Project Domain</label>
+              <select id="domain" name="domain" required>
+                <option value="" disabled selected>Select your domain</option>
+                <option>IoT / Embedded Systems</option>
+                <option>Artificial Intelligence / ML</option>
+                <option>Web Development</option>
+                <option>Computer Vision</option>
+                <option>Networking / Security</option>
+                <option>Mobile Application</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Idea / Requirements</label>
+              <textarea id="message" name="message" rows="4" placeholder="Describe your project idea, deadline, and any specific requirements..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Inquiry</span>
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10h12M10 4l6 6-6 6"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Project<span>Forge</span></div>
+          <p>Building tomorrow's engineers, one project at a time. Professional B.Tech project development across all domains.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">In</a>
+            <a href="#" aria-label="LinkedIn">Li</a>
+            <a href="#" aria-label="YouTube">Yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">IoT Projects</a></li>
+            <li><a href="#services">AI & ML Projects</a></li>
+            <li><a href="#services">Web Projects</a></li>
+            <li><a href="#services">Embedded Systems</a></li>
+            <li><a href="#services">Computer Vision</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Domains</h5>
+          <ul>
+            <li><a href="#">CSE Projects</a></li>
+            <li><a href="#">ECE Projects</a></li>
+            <li><a href="#">EEE Projects</a></li>
+            <li><a href="#">IT Projects</a></li>
+            <li><a href="#">AI & Data Science</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#contact">Get a Quote</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ProjectForge. All rights reserved.</p>
+        <p>Made with precision for B.Tech students across India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/lenis-init.js" defer></script>
+  <script src="js/scroll-animations.js" defer></script>
+  <script src="js/parallax.js" defer></script>
+  <script src="js/svg-animations.js" defer></script>
+  <script src="js/counters.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

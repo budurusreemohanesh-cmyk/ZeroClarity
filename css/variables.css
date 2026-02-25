@@ -1,0 +1,82 @@
+/* =============================================
+   PROJECTFORGE — CSS Variables
+   Arctic Slate Design System
+   ============================================= */
+
+:root {
+  /* === COLORS === */
+  --navy:       #273A48;
+  --slate:      #6B8699;
+  --ice:        #C6DDE8;
+  --cyan:       #00A4C7;
+  --frost:      #3A4C59;
+  --snow:       #FFFFFF;
+  --snow-off:   #F4F8FA;
+  --navy-dark:  #1a2a35;
+
+  /* Semantic */
+  --bg-primary:    var(--snow);
+  --bg-secondary:  var(--snow-off);
+  --bg-dark:       var(--navy);
+  --text-primary:  var(--frost);
+  --text-heading:  var(--navy);
+  --text-muted:    var(--slate);
+  --accent:        var(--cyan);
+
+  /* Transparency */
+  --navy-10:    rgba(39, 58, 72, 0.1);
+  --navy-20:    rgba(39, 58, 72, 0.2);
+  --navy-60:    rgba(39, 58, 72, 0.6);
+  --navy-80:    rgba(39, 58, 72, 0.85);
+  --cyan-10:    rgba(0, 164, 199, 0.10);
+  --cyan-20:    rgba(0, 164, 199, 0.20);
+
+  /* === TYPOGRAPHY === */
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+  --text-7xl:  4.5rem;
+
+  /* === SPACING === */
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* === LAYOUT === */
+  --container: 1200px;
+  --container-wide: 1400px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  /* === SHADOWS === */
+  --shadow-sm: 0 2px 8px rgba(39, 58, 72, 0.06);
+  --shadow-md: 0 8px 24px rgba(39, 58, 72, 0.10);
+  --shadow-lg: 0 16px 48px rgba(39, 58, 72, 0.14);
+  --shadow-xl: 0 24px 64px rgba(39, 58, 72, 0.18);
+
+  /* === TRANSITIONS === */
+  --ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:   cubic-bezier(0.4, 0, 1, 1);
+  --ease-io:   cubic-bezier(0.45, 0, 0.55, 1);
+  --dur-fast:  0.2s;
+  --dur-base:  0.35s;
+  --dur-slow:  0.6s;
+}
