@@ -90,7 +90,7 @@ window.addEventListener('load', () => {
       );
     }
 
-    console.log('[ProjectForge] SVG animations initialized');
+    console.log('[Zero Clarity] SVG animations initialized');
   };
 
   waitForGSAP();

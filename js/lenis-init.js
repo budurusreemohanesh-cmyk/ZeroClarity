@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Prevent GSAP lag smoothing interference
     gsap.ticker.lagSmoothing(0);
 
-    console.log('[ProjectForge] Lenis smooth scroll initialized');
+    console.log('[Zero Clarity] Lenis smooth scroll initialized');
   };
 
   initLenis();

@@ -240,5 +240,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  console.log('[ProjectForge] Main interactions initialized');
+  console.log('[Zero Clarity] Main interactions initialized');
 });

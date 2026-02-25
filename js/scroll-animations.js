@@ -15,6 +15,23 @@ window.addEventListener('load', () => {
     gsap.registerPlugin(ScrollTrigger);
 
     // ============================
+    // NAVBAR — Scroll Progress Indicator
+    // ============================
+    const scrollProgress = document.getElementById('scroll-progress');
+    if (scrollProgress) {
+      gsap.to(scrollProgress, {
+        scaleX: 1,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: document.body,
+          start: 'top top',
+          end: 'bottom bottom',
+          scrub: true,
+        },
+      });
+    }
+
+    // ============================
     // HERO — Staggered line reveal
     // ============================
     const heroLines = document.querySelectorAll('.hero-line');
@@ -238,7 +255,7 @@ window.addEventListener('load', () => {
       );
     }
 
-    console.log('[ProjectForge] Scroll animations initialized');
+    console.log('[Zero Clarity] Scroll animations initialized');
   };
 
   waitForGSAP();

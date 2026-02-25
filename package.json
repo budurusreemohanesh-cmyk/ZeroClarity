@@ -1,12 +1,16 @@
 {
-  "name": "iot-projectforge",
+  "name": "iot-zeroclarity",
   "version": "1.0.0",
   "description": "B.Tech Final Year Projects website",
   "main": "index.html",
+  "homepage": "https://budurusreemohanesh-cmyk.github.io/ZeroClarity",
   "scripts": {
-    "start": "serve ."
+    "start": "serve .",
+    "predeploy": "npm run start -- --version",
+    "deploy": "gh-pages -d ."
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "serve": "^14.2.4"
   }
 }

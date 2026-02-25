@@ -59,7 +59,7 @@ window.addEventListener('load', () => {
       },
     });
 
-    console.log('[ProjectForge] Counters initialized');
+    console.log('[Zero Clarity] Counters initialized');
   };
 
   waitForGSAP();

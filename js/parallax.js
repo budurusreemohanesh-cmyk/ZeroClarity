@@ -124,7 +124,7 @@ window.addEventListener('load', () => {
       });
     });
 
-    console.log('[ProjectForge] Parallax system initialized');
+    console.log('[Zero Clarity] Parallax system initialized');
   };
 
   waitForGSAP();
