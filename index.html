@@ -47,34 +47,73 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="hero-parallax-layer hero-layer-1" aria-hidden="true"></div>
-    <div class="hero-parallax-layer hero-layer-2" aria-hidden="true"></div>
-    <div class="hero-parallax-layer hero-layer-3" aria-hidden="true"></div>
+    <div class="hero-bg-glow"></div>
+    <canvas id="hero-canvas"></canvas>
+    
+    <div class="hero-grid" aria-hidden="true"></div>
 
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        Final Year Project Specialists
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-badge" data-animate>
+          <span class="badge-dot"></span>
+          Trusted by 500+ students
+        </div>
+        <h1 class="hero-title" data-animate>
+          Build Industry-Ready<br/>
+          <span class="hero-gradient-text">B.Tech Projects</span>
+        </h1>
+        <p class="hero-sub" data-animate>AI • IoT • Web • Embedded • Final Year Support</p>
+        <div class="hero-actions" data-animate>
+          <a href="#contact" class="btn btn-primary btn-glow">
+            <span class="btn-icon">🚀</span> Get Your Project
+          </a>
+          <a href="#portfolio" class="btn btn-ghost">
+            <span class="btn-icon">📁</span> View Portfolio
+          </a>
+        </div>
       </div>
-      <h1 class="hero-title">
-        <span class="hero-line" data-animate>We Build B.Tech</span>
-        <span class="hero-line hero-accent" data-animate>Projects That Help</span>
-        <span class="hero-line" data-animate>You Graduate &amp; Innovate</span>
-      </h1>
-      <p class="hero-sub" data-animate>IoT · AI · Web · Embedded · Final Year Projects</p>
-      <div class="hero-actions" data-animate>
-        <a href="#contact" class="btn btn-primary">Start Your Project</a>
-        <a href="#portfolio" class="btn btn-ghost">View Portfolio</a>
+
+      <div class="hero-right">
+        <!-- Floating UI Card 1 -->
+        <div class="floating-card glass-card card-projects" data-tilt>
+          <div class="fc-header">
+            <span class="fc-dot red"></span><span class="fc-dot yellow"></span><span class="fc-dot green"></span>
+          </div>
+          <div class="fc-body">
+            <div class="fc-line w-80"></div>
+            <div class="fc-line w-60"></div>
+            <div class="fc-line w-90"></div>
+          </div>
+        </div>
+
+        <!-- Floating UI Card 2 -->
+        <div class="floating-card glass-card card-dashboard" data-tilt>
+          <div class="dash-mockup">
+            <div class="dash-nav"></div>
+            <div class="dash-content">
+              <div class="dash-box"></div>
+              <div class="dash-box delay-1"></div>
+              <div class="dash-chart"></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Floating UI Card 3 -->
+        <div class="floating-card glass-card card-circuit" data-tilt>
+          <svg viewBox="0 0 100 100" class="circuit-svg">
+            <path d="M10,50 L30,50 L40,30 L70,30" stroke="currentColor" stroke-width="2" fill="none"/>
+            <circle cx="70" cy="30" r="4" fill="currentColor"/>
+            <path d="M30,50 L40,70 L80,70" stroke="currentColor" stroke-width="2" fill="none"/>
+            <circle cx="80" cy="70" r="4" fill="currentColor"/>
+          </svg>
+        </div>
       </div>
     </div>
 
-    <div class="hero-scroll-indicator" aria-hidden="true">
+    <div class="hero-scroll-indicator" aria-hidden="true" data-animate>
       <div class="scroll-line"></div>
       <span>Scroll</span>
     </div>
-
-    <!-- Grid overlay -->
-    <div class="hero-grid" aria-hidden="true"></div>
   </section>
 
   <!-- STATS -->

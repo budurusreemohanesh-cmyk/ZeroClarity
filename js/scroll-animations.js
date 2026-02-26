@@ -32,20 +32,20 @@ window.addEventListener('load', () => {
     }
 
     // ============================
-    // HERO — Staggered line reveal
+    // HERO — Reveal animations
     // ============================
-    const heroLines = document.querySelectorAll('.hero-line');
-    if (heroLines.length) {
+    const heroElements = document.querySelectorAll('.hero [data-animate]');
+    if (heroElements.length) {
       gsap.fromTo(
-        heroLines,
-        { y: 60, opacity: 0 },
+        heroElements,
+        { y: 50, opacity: 0 },
         {
           y: 0,
           opacity: 1,
           duration: 1,
           stagger: 0.15,
           ease: 'power3.out',
-          delay: 0.4,
+          delay: 0.2, // Faster start
         }
       );
     }

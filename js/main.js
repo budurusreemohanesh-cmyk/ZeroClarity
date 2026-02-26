@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================
   // MICRO-INTERACTIONS — Cards tilt
   // ============================
-  const tiltCards = document.querySelectorAll('.service-card, .stat-card');
+  const tiltCards = document.querySelectorAll('.service-card, .stat-card, [data-tilt]');
 
   tiltCards.forEach((card) => {
     card.addEventListener('mousemove', (e) => {
@@ -203,10 +203,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const cx = rect.width / 2;
       const cy = rect.height / 2;
 
-      const rotateX = ((y - cy) / cy) * -4;
-      const rotateY = ((x - cx) / cx) * 4;
+      const rotateX = ((y - cy) / cy) * -6;
+      const rotateY = ((x - cx) / cx) * 6;
 
-      card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
     });
 
     card.addEventListener('mouseleave', () => {
@@ -214,6 +214,47 @@ document.addEventListener('DOMContentLoaded', () => {
       card.style.transition = 'transform 0.5s ease';
     });
   });
+
+  // ============================
+  // HERO MOUSE INTERACTIONS
+  // ============================
+  const heroSection = document.getElementById('hero');
+  const heroBgFx = document.querySelector('.hero-bg-glow');
+  const hCanvas = document.getElementById('hero-canvas');
+  
+  if (heroSection) {
+    heroSection.addEventListener('mousemove', (e) => {
+      const rect = heroSection.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      if (heroBgFx) {
+        // Glow follows cursor
+        heroBgFx.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(0,200,255,0.25), transparent 60%), linear-gradient(135deg, #081421, #0b2a4a, #0e3a5f)`;
+        // Subtle shift (parallax)
+        const moveX = (window.innerWidth / 2 - e.clientX) * 0.02;
+        const moveY = (window.innerHeight / 2 - e.clientY) * 0.02;
+        heroBgFx.style.transform = `translate(${moveX}px, ${moveY}px)`;
+      }
+      
+      if (hCanvas) {
+        const moveX = (window.innerWidth / 2 - e.clientX) * 0.01;
+        const moveY = (window.innerHeight / 2 - e.clientY) * 0.01;
+        hCanvas.style.transform = `translate(${moveX}px, ${moveY}px)`;
+      }
+    });
+
+    // Reset on leave
+    heroSection.addEventListener('mouseleave', () => {
+      if (heroBgFx) {
+        heroBgFx.style.background = `radial-gradient(circle at 30% 40%, rgba(0,200,255,0.2), transparent 60%), linear-gradient(135deg, #081421, #0b2a4a, #0e3a5f)`;
+        heroBgFx.style.transform = 'translate(0,0)';
+      }
+      if (hCanvas) {
+        hCanvas.style.transform = 'translate(0,0)';
+      }
+    });
+  }
 
   // ============================
   // LAZY LOAD — Images
